@@ -5,6 +5,72 @@
   margin: 0 auto;
 }
 
+main {
+  margin-top: 150px;
+  min-height: calc(100vh - 240px);
+}
+
+h1 {
+  font-size: 24px;
+  color: #282c34;
+}
+
+/* Nav */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282c34;
+  padding: 20px 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav .title a {
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #282c34;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
 /* 景點列表 */
 .tour-list-wrapper {
   display: grid;

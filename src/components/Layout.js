@@ -4,9 +4,15 @@ function Layout() {
   return (
     <>
       <nav>
-        <Link to="/">高雄旅遊網</Link>
-        <NavLink to="/">首頁</NavLink>
-        <NavLink to="/tour-list">景點列表</NavLink>
+        <div className="container">
+          <div className="title">
+            <Link to="/">高雄旅遊網</Link>
+          </div>
+          <ul className='navbar'>
+            <li><NavLink to="/">首頁</NavLink></li>
+            <li><NavLink to="/tour-list">景點列表</NavLink></li>
+          </ul>
+        </div>
       </nav>
       <main>
         <Outlet />

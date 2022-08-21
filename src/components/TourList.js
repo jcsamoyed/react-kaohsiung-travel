@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import logo from '../logo.svg';
 
 function TourList() {
   const [listData, setListData] = useState([]);
@@ -12,20 +13,24 @@ function TourList() {
   }, [])
 
   return (
-    <>
+    <div className="container">
       <h1>景點列表</h1>
-      <ul>
-        {listData.map((item) => {
-          return (
-            <li key={item.Id}>
-              <Link to={item.Id}>
-                {item.Name}
-              </Link>
-            </li>
-          )
-        })}
-      </ul>
-    </>
+      {listData.length ? (
+        <ul className="tour-list-wrapper">
+          {listData.map((item) => {
+            return (
+              <li key={item.Id}>
+                <Link to={item.Id}>
+                  <img src={item.Picture1} alt={item.Name} />
+                  <p>{item.Name}</p>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      ) : <img src={logo} className="App-logo" alt="logo" />
+      }
+    </div>
   )
 }
 

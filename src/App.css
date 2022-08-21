@@ -1,3 +1,45 @@
+.container {
+  max-width: 1024px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* 景點列表 */
+.tour-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.tour-list-wrapper li {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.tour-list-wrapper li:hover {
+  opacity: 0.5;
+}
+
+.tour-list-wrapper li img {
+  display: block;
+  width: 100%;
+}
+
+.tour-list-wrapper li a {
+  text-decoration: none;
+}
+
+.tour-list-wrapper li p {
+  color: #333;
+  font-weight: bold;
+}
+
+/* 原始資料 */
 .App {
   text-align: center;
 }
@@ -32,6 +74,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

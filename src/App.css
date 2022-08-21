@@ -1,6 +1,5 @@
 .container {
   max-width: 1024px;
-  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -103,6 +102,30 @@ footer p {
 .tour-list-wrapper li p {
   color: #333;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .tour-list-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tour-list-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .tour-list-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* 景點詳細頁 */
+.detail img {
+  display: block;
+  margin: 0 auto 20px;
 }
 
 /* 原始資料 */

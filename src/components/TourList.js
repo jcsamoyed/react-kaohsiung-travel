@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import logo from '../logo.svg';
+import Loading from "./Loading";
 
 function TourList() {
   const [listData, setListData] = useState([]);
@@ -28,7 +28,7 @@ function TourList() {
             )
           })}
         </ul>
-      ) : <img src={logo} className="App-logo" alt="logo" />
+      ) : <Loading />
       }
     </div>
   )

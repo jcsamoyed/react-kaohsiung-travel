@@ -6,7 +6,7 @@ function Layout() {
       <nav>
         <Link to="/">高雄旅遊網</Link>
         <NavLink to="/">首頁</NavLink>
-        <NavLink to="/tour">景點列表</NavLink>
+        <NavLink to="/tour-list">景點列表</NavLink>
       </nav>
       <main>
         <Outlet />
